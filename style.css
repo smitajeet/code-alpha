@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Roboto;
+  src: url('./RobotoSlab-VariableFont_wght.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: .5;
+  font-family: Roboto;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  background: url('./bgg.jpg.jpg') no-repeat;
+  backdrop-filter: brightness(50%);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  min-height: 20vh;
+}
+
+header>div {
+  display: flex;
+  gap: 100px;
+}
+
+body>section {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+
+body>section section {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
+}
+
+body>section section h3 {
+  text-align: center;
+}
+
+body>section section form {
+  padding: 20px 50px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+body>section section #type {
+  display: none;
+}
+
+body>section section form div,
+body>section section form .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body>section section form .option span {
+  text-align: center;
+  width: 100%;
+}
+
+body>section section form div span,
+body>section section form div label,
+body>section section form div input {
+  font-size: 20px;
+  padding: 15px;
+}
+
+body>section section form div input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  margin: 10px;
+  width: 300px;
+  background-color: transparent;
+}
+
+body>section section form input[type=date] {
+  color-scheme: dark;
+}
+
+body>section section form button {
+  cursor: pointer;
+  width: max-content;
+  margin: 10px auto;
+  font-size: 17px;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+body>section section #transactionList li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+body>section section #transactionList li .amount {
+  width: 100px;
+}
+
+body>section section #transactionList li .name {
+  display: flex;
+  gap: 10px;
+}
+
+body>section section #transactionList li .action {
+  width: 5%;
+}
+
+body>section section #transactionList li .action img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+body>section section #transactionList li h4 {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
